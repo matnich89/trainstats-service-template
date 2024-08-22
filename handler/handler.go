@@ -2,6 +2,7 @@ package handler
 
 import (
 	"github.com/gorilla/websocket"
+	"github.com/matnich89/network-rail-client/client"
 	"log"
 	"net/http"
 	"time"
@@ -16,10 +17,11 @@ var upgrader = websocket.Upgrader{
 }
 
 type Handler struct {
+	nrClient *client.NetworkRailClient
 }
 
-func NewHandler() *Handler {
-	return &Handler{}
+func NewHandler(nrClient *client.NetworkRailClient) *Handler {
+	return &Handler{nrClient: nrClient}
 }
 
 func (h *Handler) ConnectWS(w http.ResponseWriter, r *http.Request) {
