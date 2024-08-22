@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"github.com/go-chi/chi/v5"
 	"github.com/matnich89/network-rail-client/client"
-	cmd "goapp-temmplate/cmd/api"
-	"goapp-temmplate/handler"
+	cmd "github.com/matnich89/trainstats-service-template/cmd/api"
+	"github.com/matnich89/trainstats-service-template/handler"
 	"log"
 	"os"
 )

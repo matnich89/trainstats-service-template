@@ -2,7 +2,7 @@ package cmd
 
 import (
 	"github.com/go-chi/chi/v5"
-	"goapp-temmplate/handler"
+	"github.com/matnich89/trainstats-service-template/handler"
 )
 
 type App struct {

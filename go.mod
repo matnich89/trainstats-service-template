@@ -1,4 +1,4 @@
-module goapp-temmplate
+module github.com/matnich89/trainstats-service-template
 
 go 1.23
 
